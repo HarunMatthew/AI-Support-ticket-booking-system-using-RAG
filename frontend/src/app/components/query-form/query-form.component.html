@@ -1,0 +1,35 @@
+<form class="query-form" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="query">Customer Query</label>
+    <textarea
+      id="query"
+      name="query"
+      rows="4"
+      placeholder="e.g. My product arrived damaged and the box was dented..."
+      [(ngModel)]="query"
+      [disabled]="loading"
+      required
+    ></textarea>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group topk-group">
+      <label for="topK">Top-K</label>
+      <select id="topK" name="topK" [(ngModel)]="topK" [disabled]="loading">
+        <option *ngFor="let k of topKOptions" [value]="k">{{ k }}</option>
+      </select>
+    </div>
+
+    <button
+      type="submit"
+      class="analyze-btn"
+      [disabled]="loading || !query.trim()"
+    >
+      <span *ngIf="!loading">Analyze &amp; Generate Response</span>
+      <span *ngIf="loading" class="loading-inline">
+        <span class="spinner"></span>
+        {{ loadingStage || 'Processing...' }}
+      </span>
+    </button>
+  </div>
+</form>

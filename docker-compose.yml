@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    environment:
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-2.5-flash}
+      ENDEE_MOCK_MODE: ${ENDEE_MOCK_MODE:-true}
+      ENDEE_BASE_URL: ${ENDEE_BASE_URL:-}
+      ENDEE_API_TOKEN: ${ENDEE_API_TOKEN:-}
+      FRONTEND_URL: ${FRONTEND_URL:-http://localhost:4200}
+    volumes:
+      - djl-cache:/app/.djl.ai
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  djl-cache:

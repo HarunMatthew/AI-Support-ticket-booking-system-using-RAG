@@ -1,0 +1,28 @@
+<div class="context-section" *ngIf="tickets && tickets.length">
+  <h2>Semantic Matches Context</h2>
+
+  <div class="ticket-grid">
+    <div class="ticket-card" *ngFor="let t of tickets; let i = index">
+      <div class="ticket-header">
+        <span class="match-label">Match #{{ i + 1 }}</span>
+        <span class="score-pill">{{ scorePercent(t.score) }}% match</span>
+      </div>
+
+      <div class="ticket-category">{{ t.category }}</div>
+
+      <div class="ticket-field">
+        <span class="field-label">Query</span>
+        <p>{{ t.query }}</p>
+      </div>
+
+      <div class="ticket-field">
+        <span class="field-label">Resolution</span>
+        <p>{{ t.response }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="empty-state" *ngIf="tickets && tickets.length === 0">
+  No similar historical tickets found.
+</div>

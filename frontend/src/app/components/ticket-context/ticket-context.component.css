@@ -1,0 +1,84 @@
+.context-section {
+  margin-top: 28px;
+}
+
+.context-section h2 {
+  font-size: 1.05rem;
+  color: #1a202c;
+  margin-bottom: 14px;
+}
+
+.ticket-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.ticket-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px;
+  border: 1px solid #e8eaf2;
+  box-shadow: 0 2px 10px rgba(20, 20, 43, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.match-label {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #4a5568;
+}
+
+.score-pill {
+  background: #ecfdf5;
+  color: #047857;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.ticket-category {
+  display: inline-block;
+  width: fit-content;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #5468ff;
+  background: #eef0ff;
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+.ticket-field .field-label {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 3px;
+  letter-spacing: 0.03em;
+}
+
+.ticket-field p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #334155;
+}
+
+.empty-state {
+  margin-top: 24px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  padding: 20px;
+}

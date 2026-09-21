@@ -1,0 +1,17 @@
+<div class="result-card" *ngIf="result">
+  <h2>AI Generation Results</h2>
+
+  <div class="meta-row">
+    <div class="category-badge" [ngClass]="categoryClass(result.category)">
+      {{ result.category }}
+    </div>
+    <div class="search-time">
+      Endee Search Time: <strong>{{ result.searchTime | number: '1.3-3' }}s</strong>
+    </div>
+  </div>
+
+  <div class="response-box">
+    <h3>Suggested Professional Response</h3>
+    <p>{{ result.response }}</p>
+  </div>
+</div>

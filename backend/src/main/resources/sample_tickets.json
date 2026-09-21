@@ -1,0 +1,50 @@
+[
+  {
+    "id": "TKT-001",
+    "query": "I was overcharged on my last invoice. Please help me get a refund for the extra amount.",
+    "category": "Billing",
+    "response": "Hello, I apologize for the overcharge on your last invoice. We have identified the system error that caused this and have initiated a refund of the extra amount to your original payment method. It should reflect in your account within 3-5 business days."
+  },
+  {
+    "id": "TKT-002",
+    "query": "My tracking number says delivered but I haven't received my package. Could you provide more details?",
+    "category": "Delivery",
+    "response": "Hi there, I understand you haven't received your package despite the tracking status. Sometimes carriers mark packages as delivered a day early. Please wait another 24 hours. If it still hasn't arrived, please let us know so we can file an investigation with the carrier and issue a replacement."
+  },
+  {
+    "id": "TKT-003",
+    "query": "I cannot log into my account. It says 'Invalid Password' even though I just reset it.",
+    "category": "Account",
+    "response": "Hello, I'm sorry to hear you're having trouble logging in. This sometimes happens due to cached browser data. Please try clearing your browser cache and cookies, or try logging in from an incognito window. If the issue persists, let us know and we will manually force a password reset link."
+  },
+  {
+    "id": "TKT-004",
+    "query": "The application crashes every time I try to export my report to PDF. Please fix this.",
+    "category": "Technical",
+    "response": "Hi, I apologize for the app crashing during PDF export. Our engineering team is currently investigating this known bug related to large report sizes. A hotfix will be released within 48 hours. In the meantime, you can try exporting the report in CSV format as a workaround."
+  },
+  {
+    "id": "TKT-005",
+    "query": "How do I upgrade my subscription plan from Basic to Premium?",
+    "category": "Billing",
+    "response": "Hello! You can upgrade your plan easily. Log into your dashboard, go to 'Account Settings', click on 'Subscription', and select 'Upgrade to Premium'. The prorated charge will be applied to your payment method on file immediately."
+  },
+  {
+    "id": "TKT-006",
+    "query": "The product arrived damaged. The box was severely dented and the item inside is broken.",
+    "category": "Delivery",
+    "response": "Hi, I am so sorry your product arrived damaged! Please reply to this email with photos of the damaged item and the shipping box. Once received, I will immediately process a priority replacement shipment at no extra cost to you."
+  },
+  {
+    "id": "TKT-007",
+    "query": "I would like to permanently delete my account and all associated data.",
+    "category": "Account",
+    "response": "Hello, I can assist you with deleting your account. Please confirm your request by replying 'CONFIRM DELETE' to this message. Once confirmed, we will initiate the deletion of your account and all associated data within 30 days securely as per our privacy policy."
+  },
+  {
+    "id": "TKT-008",
+    "query": "Is there an API available for integrating your service with Zapier?",
+    "category": "Technical",
+    "response": "Hello, yes! We do provide a REST API. You can find our comprehensive API documentation at docs.ourservice.com/api. Additionally, we have a native Zapier app in beta. You can request access through your developer dashboard."
+  }
+]

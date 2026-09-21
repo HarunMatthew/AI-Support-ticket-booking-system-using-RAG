@@ -1,0 +1,31 @@
+<div class="dashboard">
+  <section class="hero">
+    <h1>AI Customer Support Intelligence System</h1>
+    <p>Automated request categorization &amp; response generation using Endee Vector DB and Gemini.</p>
+  </section>
+
+  <section class="card form-card">
+    <h2 class="section-title">Submit New Customer Query</h2>
+    <app-query-form
+      [loading]="loading"
+      [loadingStage]="loadingStage"
+      (submitQuery)="onSubmitQuery($event)"
+    ></app-query-form>
+  </section>
+
+  <div class="error-banner" *ngIf="errorMessage">
+    {{ errorMessage }}
+  </div>
+
+  <app-result [result]="result"></app-result>
+
+  <app-ticket-context
+    *ngIf="result"
+    [tickets]="result.similarTickets"
+  ></app-ticket-context>
+
+  <div class="empty-hint" *ngIf="!result && !loading && !errorMessage">
+    Submit a query above to see the predicted category, an AI-generated response,
+    and the historical tickets that were semantically matched.
+  </div>
+</div>

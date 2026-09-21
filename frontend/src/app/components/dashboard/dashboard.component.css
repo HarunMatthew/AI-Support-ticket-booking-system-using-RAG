@@ -1,0 +1,52 @@
+.dashboard {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.hero h1 {
+  font-size: 1.9rem;
+  margin: 0 0 8px;
+  color: #14142b;
+}
+
+.hero p {
+  color: #64748b;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 18px rgba(20, 20, 43, 0.06);
+}
+
+.section-title {
+  margin: 0 0 18px;
+  font-size: 1.05rem;
+  color: #1a202c;
+}
+
+.error-banner {
+  margin-top: 20px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+.empty-hint {
+  margin-top: 32px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
