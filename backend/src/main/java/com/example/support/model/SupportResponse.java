@@ -1,10 +1,7 @@
 package com.example.support.model;
 
 import java.util.List;
-
-/**
- * Body returned by POST /api/support/analyze
- */
+\
 public class SupportResponse {
 
     private String category;
@@ -54,3 +51,5 @@ public class SupportResponse {
         this.similarTickets = similarTickets;
     }
 }
+
+// it will reponse back to froendend 
