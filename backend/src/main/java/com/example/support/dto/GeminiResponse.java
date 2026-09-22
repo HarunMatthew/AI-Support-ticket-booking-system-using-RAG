@@ -2,10 +2,7 @@ package com.example.support.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-/**
- * Maps the JSON object Gemini is instructed to return:
- * { "category": "...", "response": "..." }
- */
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GeminiResponse {
 
@@ -36,3 +33,4 @@ public class GeminiResponse {
         this.response = response;
     }
 }
+//dto mapped to the json responses
