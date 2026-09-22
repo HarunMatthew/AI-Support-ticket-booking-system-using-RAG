@@ -13,23 +13,6 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Runs once when the Spring context is fully up (ApplicationRunner is the
- * Spring Boot 3.x-idiomatic replacement for doing startup work, preferred
- * here over @PostConstruct because all beans, including the embedding model,
- * are guaranteed to be fully initialized by the time this runs).
- *
- * Flow:
- *   Load sample_tickets.json -> generate embeddings -> insert into Endee/local store
- *
- * Duplicate-insert avoidance: tickets carry stable IDs (TKT-001 ...). Since the
- * in-memory mock store is rebuilt fresh on every restart there is nothing to
- * dedupe there. Against a real Endee deployment, insert is expected to behave
- * as an upsert keyed by id (standard behavior for vector DBs), so re-running
- * this on every startup simply re-upserts the same points rather than
- * duplicating them - if your Endee deployment does NOT upsert by id, guard
- * this with a "collection already populated" check before calling insertTickets.
- */
 @Component
 public class DataInitializer implements ApplicationRunner {
 
@@ -64,3 +47,4 @@ public class DataInitializer implements ApplicationRunner {
         log.info("System Ready! {} tickets indexed.", tickets.size());
     }
 }
+//spring-boot --> load historical tickets
