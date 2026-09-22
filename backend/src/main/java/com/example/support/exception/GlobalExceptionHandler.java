@@ -12,11 +12,6 @@ import java.time.Instant;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Converts every exception into a clean JSON error body.
- * Stack traces / internal details are logged server-side only,
- * never sent to the Angular client.
- */
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
