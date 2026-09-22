@@ -6,10 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-/**
- * Allows the Angular dev server (http://localhost:4200) to call this API
- * (http://localhost:8080) directly from the browser.
- */
+
 @Configuration
 public class AppConfig {
 
@@ -29,3 +26,5 @@ public class AppConfig {
         };
     }
 }
+
+//It file will handles the cors 
