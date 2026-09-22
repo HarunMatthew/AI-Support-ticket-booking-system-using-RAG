@@ -4,9 +4,7 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 
-/**
- * Body of POST /api/support/analyze
- */
+
 public class SupportRequest {
 
     @NotBlank(message = "query must not be blank")
@@ -35,3 +33,4 @@ public class SupportRequest {
         this.topK = topK;
     }
 }
+//repest the input coming from the froendend
