@@ -1,7 +1,7 @@
 package com.example.support.model;
 
 import java.util.List;
-\
+
 public class SupportResponse {
 
     private String category;
