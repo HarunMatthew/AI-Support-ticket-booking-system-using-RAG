@@ -1,9 +1,4 @@
 package com.example.support.model;
-
-/**
- * Mirrors one entry of sample_tickets.json (the Python source of truth).
- * Fields intentionally match: id, query, category, response.
- */
 public class Ticket {
 
     private String id;
@@ -53,3 +48,4 @@ public class Ticket {
         this.response = response;
     }
 }
+//historical customer support ticket 
