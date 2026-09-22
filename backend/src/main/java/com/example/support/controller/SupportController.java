@@ -12,13 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Java equivalent of the Streamlit app.py UI-driven flow, exposed as a REST API
- * for the Angular frontend.
- *
- * POST /api/support/analyze : full RAG pipeline (embed -> search -> generate)
- * GET  /api/support/health  : liveness check
- */
+
 @RestController
 @RequestMapping("/api/support")
 public class SupportController {
