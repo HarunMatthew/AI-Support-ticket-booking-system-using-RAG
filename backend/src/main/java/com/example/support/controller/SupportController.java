@@ -48,3 +48,4 @@ public class SupportController {
         return Map.of("status", "UP");
     }
 }
+//get request from froendend and repones back
