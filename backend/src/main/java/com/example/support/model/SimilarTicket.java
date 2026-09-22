@@ -1,10 +1,5 @@
 package com.example.support.model;
 
-/**
- * A historical ticket returned by the vector search, together with its
- * similarity score against the customer's query. Equivalent to the Python
- * search() result entries (metadata + score).
- */
 public class SimilarTicket {
 
     private String id;
@@ -64,3 +59,4 @@ public class SimilarTicket {
         this.response = response;
     }
 }
+//serach result and show the score of the ticket
